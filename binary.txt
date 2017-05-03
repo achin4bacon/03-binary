@@ -84,6 +84,16 @@ is the carry.
     1 0 | 0 1
     1 0 | 1 0
     1 1 | 1 1
+—>
+“half subtractor”
+- C | A B
+---------
+0 0 | 0 0 
+0 1 | 1 1
+1 0 | 1 0
+1 1 | 0 0
+
+
 
 EXTRA CREDIT 2: Using just the operators described above, build a "full adder".
 A "full adder" takes in three inputs: A, B, and Cin (the carry in), and produces two
@@ -101,3 +111,17 @@ A  B  Cin  | Cout S
 1  0  1    |  1  0
 1  1  0    |  1  0
 1  1  1    |  1  1
+
+->
+“full subtractor”  [ D -> Difference] [Cout -> borrow]
+
+A B Cin | Cout D
+----------------
+0 0 0   |  0   0
+0 0 1   |  1   1
+0 1 0   |  1   1
+0 1 1   |  1   0
+1 0 0   |  0   1
+1 0 1   |  0   0
+1 1 0   |  0   0
+1 1 1   |  1   1
